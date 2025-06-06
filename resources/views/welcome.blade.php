@@ -6,24 +6,30 @@
     <title>{{ $title ?? config('app.name') }}</title>
 
     <!-- FAVICON -->
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('apple-touch-icon.png') }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('/apple-touch-icon.png') }}">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('images/isotipo.png') }}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('images/isotipo.png') }}">
-    <link rel="shortcut icon" href="{{ asset('favicon.ico') }}">
+    <link rel="shortcut icon" href="{{ asset('/favicon.ico') }}">
 
 
     <meta name="msapplication-TileColor" content="#529471">
     <meta name="theme-color" content="#529471">
 
     <!-- SEO - Metatags básicos -->
-    <meta name="description" content="@yield('meta_description', 'Protege tu viaje con nuestro seguro médico, cancelaciones, pérdida de equipaje y más. Asistencia global 24/7.')">
+    <meta name="description" content="@yield('meta_description', 'Protege tu viaje con nuestro seguro médico, cancelaciones, pérdida de equipaje y más. Asistencia global 24/7. Contrata tu seguro de viaje internacional con la mejor cobertura. Protege tu salud y equipaje en todo el mundo. ¡Cotiza ahora online!')">
+
     <meta name="keywords" content="seguro de viaje, asistencia médica, cobertura internacional, seguro médico, repatriación, viajero seguro">
     <meta name="author" content="Tu Dr En Viaje">
     <meta name="robots" content="index, follow">
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="TuDrEnViajes" />
+
 
     <!-- Open Graph / Facebook -->
     <meta property="og:title" content="@yield('og_title', 'Asistencia en Viaje | Seguro Médico Global')">
-    <meta property="og:description" content="@yield('og_description', 'Cobertura integral para viajeros del mundo. Servicio 24/7, redes médicas globales y planes flexibles.')">
+    <meta property="og:description" content="@yield('og_description', 'Cobertura integral para viajeros del mundo. Servicio 24/7, redes médicas globales y planes flexibles. Contrata tu seguro de viaje internacional con la mejor cobertura. Protege tu salud y equipaje en todo el mundo. ¡Cotiza ahora online!')">
+
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ url()->current() }}">
     <meta property="og:image" content="{{ asset('images/logo_3.png') }}">
