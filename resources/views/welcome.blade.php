@@ -6,10 +6,10 @@
     <title>{{ $title ?? config('app.name') }}</title>
 
     <!-- FAVICON -->
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('images/isotipo.png') }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('apple-touch-icon.png') }}">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('images/isotipo.png') }}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('images/isotipo.png') }}">
-    <link rel="shortcut icon" href="{{ asset('images/favicon.ico') }}">
+    <link rel="shortcut icon" href="{{ asset('favicon.ico') }}">
 
 
     <meta name="msapplication-TileColor" content="#529471">
