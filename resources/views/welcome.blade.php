@@ -91,7 +91,7 @@
         }
 
         .hero-overlay {
-            background: linear-gradient(135deg, rgba(0, 204, 255, 0.143), rgba(0, 0, 0, 0.7));
+            background: linear-gradient(135deg, rgba(0, 204, 255, 0.143), rgba(0, 0, 0, 0.438));
         }
 
         .service-card {
@@ -292,7 +292,8 @@
     <!-- Hero Banner con Video de fondo -->
     <section id="inicio" class="min-h-screen flex items-center relative overflow-hidden">
         <video autoplay muted loop playsinline class="hero-video">
-            <source src="{{ asset('images/151055-800680791_medium.mp4') }}" type="video/mp4">
+            <source src="{{ asset('images/85761-590014859_medium.mp4') }}" type="video/mp4">
+
         </video>
 
         <div class="hero-overlay absolute inset-0"></div>
@@ -458,21 +459,21 @@
                     <div class="bg-primary text-white p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6">
                         <i class="fas fa-plane text-2xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-4">Seguro Básico</h3>
+                    <h3 class="text-xl font-bold mb-4">Plan Local</h3>
                     <p class="mb-6">Protección esencial para viajes cortos con cobertura médica básica y asistencia en viaje.</p>
                     <ul class="mb-6 space-y-2">
                         <li class="flex items-center"><i class="fas fa-check-circle text-success mr-2"></i> Asistencia médica</li>
                         <li class="flex items-center"><i class="fas fa-check-circle text-success mr-2"></i> Pérdida de equipaje</li>
                         <li class="flex items-center"><i class="fas fa-check-circle text-success mr-2"></i> Asistencia legal</li>
                     </ul>
-                    <div class="text-2xl font-bold text-secondary">Desde $25/día</div>
+                    {{-- <div class="text-2xl font-bold text-secondary">Desde $25/día</div> --}}
                 </div>
 
                 <div class="service-card bg-white p-8 rounded-xl shadow-sm">
                     <div class="bg-primary text-white p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6">
                         <i class="fas fa-suitcase text-2xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-4">Seguro Premium</h3>
+                    <h3 class="text-xl font-bold mb-4">Plan Mundial</h3>
                     <p class="mb-6">Cobertura completa para viajes largos o familiares, con protección extendida y beneficios adicionales.</p>
                     <ul class="mb-6 space-y-2">
                         <li class="flex items-center"><i class="fas fa-check-circle text-success mr-2"></i> Todo el plan Básico +</li>
@@ -480,14 +481,14 @@
                         <li class="flex items-center"><i class="fas fa-check-circle text-success mr-2"></i> Repatriación médica</li>
                         <li class="flex items-center"><i class="fas fa-check-circle text-success mr-2"></i> Cobertura deportiva</li>
                     </ul>
-                    <div class="text-2xl font-bold text-secondary">Desde $40/día</div>
+                    {{-- <div class="text-2xl font-bold text-secondary">Desde $40/día</div> --}}
                 </div>
 
                 <div class="service-card bg-white p-8 rounded-xl shadow-sm">
                     <div class="bg-primary text-white p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6">
                         <i class="fas fa-globe-europe text-2xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-4">Seguro Internacional</h3>
+                    <h3 class="text-xl font-bold mb-4">Europa Low Cost</h3>
                     <p class="mb-6">Protección para viajes internacionales con coberturas ampliadas y asistencia en múltiples idiomas.</p>
                     <ul class="mb-6 space-y-2">
                         <li class="flex items-center"><i class="fas fa-check-circle text-success mr-2"></i> Todo el plan Premium +</li>
@@ -495,7 +496,7 @@
                         <li class="flex items-center"><i class="fas fa-check-circle text-success mr-2"></i> Extensión de estancia</li>
                         <li class="flex items-center"><i class="fas fa-check-circle text-success mr-2"></i> Cobertura Schengen</li>
                     </ul>
-                    <div class="text-2xl font-bold text-secondary">Desde $55/día</div>
+                    {{-- <div class="text-2xl font-bold text-secondary">Desde $55/día</div> --}}
                 </div>
             </div>
         </div>
@@ -517,10 +518,10 @@
                     </div>
                     <h3 class="text-xl font-bold mb-4">Asistencia Médica</h3>
                     <p class="text-gray-600 mb-4">Cobertura médica en caso de emergencias durante tu viaje, incluyendo hospitalización y medicamentos.</p>
-                    <a href="#" class="text-primary font-medium flex items-center">
+                    {{-- <a href="#" class="text-primary font-medium flex items-center">
                         Ver detalles
                         <i class="fas fa-arrow-right ml-2 text-sm"></i>
-                    </a>
+                    </a> --}}
                 </div>
 
                 <div class="bg-white rounded-2xl p-8 shadow-lg service-card animate-on-scroll">
@@ -529,10 +530,10 @@
                     </div>
                     <h3 class="text-xl font-bold mb-4">Asistencia en Viaje</h3>
                     <p class="text-gray-600 mb-4">Ayuda en caso de pérdida de equipaje, retrasos de vuelo o cancelaciones de viaje.</p>
-                    <a href="#" class="text-primary font-medium flex items-center">
+                    {{-- <a href="#" class="text-primary font-medium flex items-center">
                         Ver detalles
                         <i class="fas fa-arrow-right ml-2 text-sm"></i>
-                    </a>
+                    </a> --}}
                 </div>
 
                 <div class="bg-white rounded-2xl p-8 shadow-lg service-card animate-on-scroll">
@@ -541,10 +542,10 @@
                     </div>
                     <h3 class="text-xl font-bold mb-4">Asistencia Legal</h3>
                     <p class="text-gray-600 mb-4">Asesoramiento y apoyo legal en caso de incidentes durante tu estadía en el extranjero.</p>
-                    <a href="#" class="text-primary font-medium flex items-center">
+                    {{-- <a href="#" class="text-primary font-medium flex items-center">
                         Ver detalles
                         <i class="fas fa-arrow-right ml-2 text-sm"></i>
-                    </a>
+                    </a> --}}
                 </div>
 
                 <div class="bg-white rounded-2xl p-8 shadow-lg service-card animate-on-scroll">
@@ -553,10 +554,10 @@
                     </div>
                     <h3 class="text-xl font-bold mb-4">Asistencia en Hogar</h3>
                     <p class="text-gray-600 mb-4">Soporte para emergencias en tu hogar mientras estás de viaje.</p>
-                    <a href="#" class="text-primary font-medium flex items-center">
+                    {{-- <a href="#" class="text-primary font-medium flex items-center">
                         Ver detalles
                         <i class="fas fa-arrow-right ml-2 text-sm"></i>
-                    </a>
+                    </a> --}}
                 </div>
 
                 <div class="bg-white rounded-2xl p-8 shadow-lg service-card animate-on-scroll">
@@ -565,10 +566,10 @@
                     </div>
                     <h3 class="text-xl font-bold mb-4">Asistencia Vehicular</h3>
                     <p class="text-gray-600 mb-4">Ayuda en caso de accidentes o problemas mecánicos con tu vehículo durante el viaje.</p>
-                    <a href="#" class="text-primary font-medium flex items-center">
+                    {{-- <a href="#" class="text-primary font-medium flex items-center">
                         Ver detalles
                         <i class="fas fa-arrow-right ml-2 text-sm"></i>
-                    </a>
+                    </a> --}}
                 </div>
 
                 <div class="bg-white rounded-2xl p-8 shadow-lg service-card animate-on-scroll">
@@ -577,10 +578,10 @@
                     </div>
                     <h3 class="text-xl font-bold mb-4">Cobertura Internacional</h3>
                     <p class="text-gray-600 mb-4">Protección en todos tus viajes internacionales con servicios adaptados a cada país.</p>
-                    <a href="#" class="text-primary font-medium flex items-center">
+                    {{-- <a href="#" class="text-primary font-medium flex items-center">
                         Ver detalles
                         <i class="fas fa-arrow-right ml-2 text-sm"></i>
-                    </a>
+                    </a> --}}
                 </div>
             </div>
         </div>
@@ -905,7 +906,7 @@
     </section>
 
 
-    {{-- <!-- Sección Cotizar -->
+    <!-- Sección Cotizar -->
     <section id="cotizar" class="py-20 bg-gradient-to-r from-primary to-secondary text-white">
         <div class="container mx-auto px-6">
             <div class="max-w-4xl mx-auto">
@@ -1026,7 +1027,7 @@
                 </div>
             </div>
         </div>
-    </section> --}}
+    </section>
 
     <!-- CTA Section -->
     <section class="py-16 bg-gradient-to-r from-primary to-secondary">
