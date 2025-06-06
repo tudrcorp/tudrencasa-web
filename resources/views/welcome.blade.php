@@ -18,7 +18,7 @@
     <!-- SEO - Metatags básicos -->
     <meta name="description" content="@yield('meta_description', 'Protege tu viaje con nuestro seguro médico, cancelaciones, pérdida de equipaje y más. Asistencia global 24/7.')">
     <meta name="keywords" content="seguro de viaje, asistencia médica, cobertura internacional, seguro médico, repatriación, viajero seguro">
-    <meta name="author" content="Asistencia en Viaje S.A.">
+    <meta name="author" content="Tu Dr En Viaje">
     <meta name="robots" content="index, follow">
 
     <!-- Open Graph / Facebook -->
@@ -30,8 +30,7 @@
     <meta property="og:site_name" content="Asistencia en Viaje">
 
     <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@tu_empresa">
+    <meta name="twitter:card" content="{{ asset('images/logo_3.png') }}">
     <meta name="twitter:title" content="@yield('og_title', 'Asistencia en Viaje | Seguro Médico Global')">
     <meta name="twitter:description" content="@yield('og_description', 'Cobertura integral para viajeros del mundo.')">
     <meta name="twitter:image" content="{{ asset('images/logo_3.png') }}">
