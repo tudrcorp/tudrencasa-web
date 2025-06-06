@@ -51,7 +51,6 @@
                     colors: {
                         primary: "#052F60"
                         , alert: "#f97316",
-
                         secondary: "#305B93"
                         , tertiary: "#5488AE"
                         , accent: "#4A8982"
@@ -1092,19 +1091,19 @@
                     <ul class="space-y-3">
                         <li class="flex items-start">
                             <i class="fas fa-map-marker-alt mt-1 mr-3 text-tertiary"></i>
-                            <span>Av. Principal #123, Caracas, Venezuela</span>
+                            <span>Av. Principal de Chacao, Caracas, Venezuela</span>
                         </li>
                         <li class="flex items-start">
                             <i class="fas fa-phone mt-1 mr-3 text-tertiary"></i>
-                            <span>+58 212 555 1234</span>
+                            <span>+58 424 2271498</span>
                         </li>
                         <li class="flex items-start">
                             <i class="fas fa-envelope mt-1 mr-3 text-tertiary"></i>
-                            <span>info@viajeseguro.com</span>
+                            <span>info@tudrenviajes.com</span>
                         </li>
                         <li class="flex items-start">
                             <i class="fab fa-whatsapp mt-1 mr-3 text-tertiary"></i>
-                            <span>+58 412 555 5678</span>
+                            <span>+58 424 2271498</span>
                         </li>
                     </ul>
                 </div>
