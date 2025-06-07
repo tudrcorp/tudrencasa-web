@@ -354,7 +354,7 @@
                     {{-- <div class="bg-white p-2 rounded-full mr-3">
                         <i class="fas fa-shield-alt text-primary text-2xl"></i>
                     </div>
-                    <span class="text-white text-xl font-bold">Tu Dr. en Viejaes </span> --}}
+                    <span class="text-white text-xl font-bold">Tu Dr. en Viajes </span> --}}
                     <img src="{{ asset('images/logo_3.png') }}" class="w-1/4 h-auto" alt="Viaja protegido con nuestro seguro médico global">
                 </div>
 
@@ -396,13 +396,13 @@
 
             <div class="flex flex-col md:flex-row items-center gap-12">
                 <div class="md:w-1/2">
-                    <img src="{{ asset('images/familia.webp') }}" alt="Equipo Tu Dr. en Viejaes " class="rounded-xl shadow-lg w-full">
+                    <img src="{{ asset('images/familia.webp') }}" alt="Equipo Tu Dr. en Viajes " class="rounded-xl shadow-lg w-full">
 
                 </div>
 
                 <div class="md:w-1/2">
                     <h3 class="text-2xl font-bold mb-6">Tu seguridad es nuestra prioridad</h3>
-                    <p class="text-lg mb-6">En Tu Dr. en Viejaes llevamos más de 15 años brindando soluciones de protección para viajeros en todo el mundo. Nuestra misión es ofrecerte tranquilidad durante tus viajes, con coberturas adaptadas a tus necesidades específicas.</p>
+                    <p class="text-lg mb-6">En Tu Dr. en Viajes llevamos más de 15 años brindando soluciones de protección para viajeros en todo el mundo. Nuestra misión es ofrecerte tranquilidad durante tus viajes, con coberturas adaptadas a tus necesidades específicas.</p>
 
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                         <div class="flex items-start">
@@ -692,7 +692,7 @@
         <div class="container mx-auto px-6">
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-4xl font-bold mb-4">Lo que dicen nuestros clientes</h2>
-                <p class="text-xl max-w-3xl mx-auto mb-6">Experiencias reales de viajeros protegidos por Tu Dr. en Viejaes </p>
+                <p class="text-xl max-w-3xl mx-auto mb-6">Experiencias reales de viajeros protegidos por Tu Dr. en Viajes </p>
                 <div class="w-20 h-1 bg-tertiary mx-auto"></div>
             </div>
 
@@ -701,7 +701,7 @@
                     <div class="quote-icon mb-4">
                         <i class="fas fa-quote-left"></i>
                     </div>
-                    <p class="mb-6 italic">"Tuve un accidente en mi viaje a Italia y Tu Dr. en Viejaes  gestionó todo de forma impecable. Desde la atención médica hasta mi repatriación, todo fue perfecto."</p>
+                    <p class="mb-6 italic">"Tuve un accidente en mi viaje a Italia y Tu Dr. en Viajes  gestionó todo de forma impecable. Desde la atención médica hasta mi repatriación, todo fue perfecto."</p>
                     <div class="flex items-center">
                         <div class="bg-gray-200 border-2 border-dashed rounded-xl w-16 h-16 mr-4"></div>
                         <div>
@@ -721,7 +721,7 @@
                     <div class="quote-icon mb-4">
                         <i class="fas fa-quote-left"></i>
                     </div>
-                    <p class="mb-6 italic">"Perdí mi equipaje en un vuelo a París. En menos de 24 horas, Tu Dr. en Viejaes  me proporcionó un adelanto para comprar lo necesario. ¡Servicio excepcional!"</p>
+                    <p class="mb-6 italic">"Perdí mi equipaje en un vuelo a París. En menos de 24 horas, Tu Dr. en Viajes  me proporcionó un adelanto para comprar lo necesario. ¡Servicio excepcional!"</p>
                     <div class="flex items-center">
                         <div class="bg-gray-200 border-2 border-dashed rounded-xl w-16 h-16 mr-4"></div>
                         <div>
@@ -741,7 +741,7 @@
                     <div class="quote-icon mb-4">
                         <i class="fas fa-quote-left"></i>
                     </div>
-                    <p class="mb-6 italic">"Contraté el seguro para mi viaje de estudios a Canadá. La cobertura médica fue fundamental cuando tuve apendicitis. Gracias a Tu Dr. en Viejaes , todo fue más fácil."</p>
+                    <p class="mb-6 italic">"Contraté el seguro para mi viaje de estudios a Canadá. La cobertura médica fue fundamental cuando tuve apendicitis. Gracias a Tu Dr. en Viajes , todo fue más fácil."</p>
                     <div class="flex items-center">
                         <div class="bg-gray-200 border-2 border-dashed rounded-xl w-16 h-16 mr-4"></div>
                         <div>
@@ -814,7 +814,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <p class="mb-8 text-lg italic relative">"Tuve un accidente durante mi viaje a Italia y Tu Dr. en Viejaes gestionó todo de forma impecable. Desde la atención médica hasta mi repatriación, todo fue perfecto. ¡Increíble servicio en momentos difíciles!"</p>
+                                <p class="mb-8 text-lg italic relative">"Tuve un accidente durante mi viaje a Italia y Tu Dr. en Viajes gestionó todo de forma impecable. Desde la atención médica hasta mi repatriación, todo fue perfecto. ¡Increíble servicio en momentos difíciles!"</p>
                                 <div class="flex items-center">
                                     <div class="bg-light p-3 rounded-lg mr-4">
                                         <i class="fas fa-suitcase-rolling text-tertiary text-xl"></i>
@@ -850,7 +850,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <p class="mb-8 text-lg italic relative">"Perdí mi equipaje en un vuelo a París. En menos de 24 horas, Tu Dr. en Viejaes me proporcionó un adelanto para comprar lo necesario. ¡Servicio excepcional y muy rápida respuesta en pleno viaje!"</p>
+                                <p class="mb-8 text-lg italic relative">"Perdí mi equipaje en un vuelo a París. En menos de 24 horas, Tu Dr. en Viajes me proporcionó un adelanto para comprar lo necesario. ¡Servicio excepcional y muy rápida respuesta en pleno viaje!"</p>
                                 <div class="flex items-center">
                                     <div class="bg-light p-3 rounded-lg mr-4">
                                         <i class="fas fa-stethoscope text-tertiary text-xl"></i>
@@ -886,7 +886,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <p class="mb-8 text-lg italic relative">"Contraté el seguro para mi viaje de estudios a Canadá. La cobertura médica fue fundamental cuando tuve apendicitis. Gracias a Tu Dr. en Viejaes , todo fue más fácil y sin preocupaciones económicas."</p>
+                                <p class="mb-8 text-lg italic relative">"Contraté el seguro para mi viaje de estudios a Canadá. La cobertura médica fue fundamental cuando tuve apendicitis. Gracias a Tu Dr. en Viajes , todo fue más fácil y sin preocupaciones económicas."</p>
                                 <div class="flex items-center">
                                     <div class="bg-light p-3 rounded-lg mr-4">
                                         <i class="fas fa-plane text-tertiary text-xl"></i>
@@ -922,7 +922,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <p class="mb-8 text-lg italic relative">"Mi vuelo fue cancelado por una tormenta y Tu Dr. en Viejaes me cubrió los gastos de hotel y comida sin problemas. La app móvil es muy fácil de usar para gestionar todo directamente desde el teléfono."</p>
+                                <p class="mb-8 text-lg italic relative">"Mi vuelo fue cancelado por una tormenta y Tu Dr. en Viajes me cubrió los gastos de hotel y comida sin problemas. La app móvil es muy fácil de usar para gestionar todo directamente desde el teléfono."</p>
                                 <div class="flex items-center">
                                     <div class="bg-light p-3 rounded-lg mr-4">
                                         <i class="fas fa-hotel text-tertiary text-xl"></i>
@@ -958,7 +958,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <p class="mb-8 text-lg italic relative">"Mi vuelo fue cancelado por una tormenta y Tu Dr. en Viejaes me cubrió los gastos de hotel y comida sin problemas. La app móvil es muy fácil de usar para gestionar todo directamente desde el teléfono."</p>
+                                <p class="mb-8 text-lg italic relative">"Mi vuelo fue cancelado por una tormenta y Tu Dr. en Viajes me cubrió los gastos de hotel y comida sin problemas. La app móvil es muy fácil de usar para gestionar todo directamente desde el teléfono."</p>
                                 <div class="flex items-center">
                                     <div class="bg-light p-3 rounded-lg mr-4">
                                         <i class="fas fa-hotel text-tertiary text-xl"></i>
@@ -995,7 +995,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <p class="mb-8 text-lg italic relative">"Mi vuelo fue cancelado por una tormenta y Tu Dr. en Viejaes me cubrió los gastos de hotel y comida sin problemas. La app móvil es muy fácil de usar para gestionar todo directamente desde el teléfono."</p>
+                                <p class="mb-8 text-lg italic relative">"Mi vuelo fue cancelado por una tormenta y Tu Dr. en Viajes me cubrió los gastos de hotel y comida sin problemas. La app móvil es muy fácil de usar para gestionar todo directamente desde el teléfono."</p>
                                 <div class="flex items-center">
                                     <div class="bg-light p-3 rounded-lg mr-4">
                                         <i class="fas fa-hotel text-tertiary text-xl"></i>
@@ -1032,7 +1032,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <p class="mb-8 text-lg italic relative">"Mi vuelo fue cancelado por una tormenta y Tu Dr. en Viejaes me cubrió los gastos de hotel y comida sin problemas. La app móvil es muy fácil de usar para gestionar todo directamente desde el teléfono."</p>
+                                <p class="mb-8 text-lg italic relative">"Mi vuelo fue cancelado por una tormenta y Tu Dr. en Viajes me cubrió los gastos de hotel y comida sin problemas. La app móvil es muy fácil de usar para gestionar todo directamente desde el teléfono."</p>
                                 <div class="flex items-center">
                                     <div class="bg-light p-3 rounded-lg mr-4">
                                         <i class="fas fa-hotel text-tertiary text-xl"></i>
@@ -1069,7 +1069,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <p class="mb-8 text-lg italic relative">"Mi vuelo fue cancelado por una tormenta y Tu Dr. en Viejaes me cubrió los gastos de hotel y comida sin problemas. La app móvil es muy fácil de usar para gestionar todo directamente desde el teléfono."</p>
+                                <p class="mb-8 text-lg italic relative">"Mi vuelo fue cancelado por una tormenta y Tu Dr. en Viajes me cubrió los gastos de hotel y comida sin problemas. La app móvil es muy fácil de usar para gestionar todo directamente desde el teléfono."</p>
                                 <div class="flex items-center">
                                     <div class="bg-light p-3 rounded-lg mr-4">
                                         <i class="fas fa-hotel text-tertiary text-xl"></i>
@@ -1106,7 +1106,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <p class="mb-8 text-lg italic relative">"Mi vuelo fue cancelado por una tormenta y Tu Dr. en Viejaes me cubrió los gastos de hotel y comida sin problemas. La app móvil es muy fácil de usar para gestionar todo directamente desde el teléfono."</p>
+                                <p class="mb-8 text-lg italic relative">"Mi vuelo fue cancelado por una tormenta y Tu Dr. en Viajes me cubrió los gastos de hotel y comida sin problemas. La app móvil es muy fácil de usar para gestionar todo directamente desde el teléfono."</p>
                                 <div class="flex items-center">
                                     <div class="bg-light p-3 rounded-lg mr-4">
                                         <i class="fas fa-hotel text-tertiary text-xl"></i>
@@ -1143,7 +1143,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <p class="mb-8 text-lg italic relative">"Mi vuelo fue cancelado por una tormenta y Tu Dr. en Viejaes me cubrió los gastos de hotel y comida sin problemas. La app móvil es muy fácil de usar para gestionar todo directamente desde el teléfono."</p>
+                                <p class="mb-8 text-lg italic relative">"Mi vuelo fue cancelado por una tormenta y Tu Dr. en Viajes me cubrió los gastos de hotel y comida sin problemas. La app móvil es muy fácil de usar para gestionar todo directamente desde el teléfono."</p>
                                 <div class="flex items-center">
                                     <div class="bg-light p-3 rounded-lg mr-4">
                                         <i class="fas fa-hotel text-tertiary text-xl"></i>
@@ -1375,7 +1375,7 @@
                         {{-- <div class="bg-white p-2 rounded-full mr-3">
                             <i class="fas fa-shield-alt text-primary text-xl"></i>
                         </div>
-                        <span class="text-white text-xl font-bold">Tu Dr. en Viejaes </span> --}}
+                        <span class="text-white text-xl font-bold">Tu Dr. en Viajes </span> --}}
                         <img src="{{ asset('images/logo_3.png') }}" class="w-28" alt="Viaja protegido con nuestro seguro médico global">
                     </div>
                     <p class="mb-6">Protegiendo tus viajes desde 2008 con soluciones de seguro adaptadas a cada viajero.</p>
