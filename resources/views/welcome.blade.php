@@ -393,7 +393,8 @@
 
             <div class="flex flex-col md:flex-row items-center gap-12">
                 <div class="md:w-1/2">
-                    <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="Equipo ViajeSeguro" class="rounded-xl shadow-lg w-full">
+                    <img src="{{ asset('images/familia.webp') }}" alt="Equipo ViajeSeguro" class="rounded-xl shadow-lg w-full">
+
                 </div>
 
                 <div class="md:w-1/2">
@@ -509,18 +510,21 @@
     <section id="servicios" class="pt-5 pb-28 bg-sand">
         <div class="container mx-auto px-4">
             <div class="text-center max-w-3xl mx-auto mb-16 animate-on-scroll">
-                {{-- <h2 class="text-3xl md:text-4xl font-bold mb-4 text-dark font-serif">Nuestros <span class="text-primary">Servicios</span></h2> --}}
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-dark font-serif">UPGRADES <span class="text-primary">VIP</span></h2>
                 <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
                 <p class="text-gray-600">Ofrecemos una amplia gama de servicios diseñados para protegerte en cada etapa de tu viaje.</p>
             </div>
 
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-8">
+
                 <div class="bg-white rounded-2xl p-8 shadow-lg service-card animate-on-scroll">
-                    <div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-6">
-                        <i class="fas fa-medkit text-primary text-2xl"></i>
+                    <div class="w-16 h-16 rounded-full bg-primary/10 p-3 flex items-center justify-center mb-6">
+                        <img src="{{ asset('images/pregnant.png') }}" alt="Materna VIP">
+
                     </div>
-                    <h3 class="text-xl font-bold mb-4">Asistencia Médica</h3>
-                    <p class="text-gray-600 mb-4">Cobertura médica en caso de emergencias durante tu viaje, incluyendo hospitalización y medicamentos.</p>
+                    <h3 class="text-xl font-bold mb-4">Materna VIP</h3>
+                    <p class="text-gray-600 mb-4">Cobertura mundial US$ 10.000. Hasta 32 semanas de gestación. Límite de edad de 19 a 45 años.</p>
+
                     {{-- <a href="#" class="text-primary font-medium flex items-center">
                         Ver detalles
                         <i class="fas fa-arrow-right ml-2 text-sm"></i>
@@ -528,11 +532,15 @@
                 </div>
 
                 <div class="bg-white rounded-2xl p-8 shadow-lg service-card animate-on-scroll">
-                    <div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-6">
-                        <i class="fas fa-plane text-primary text-2xl"></i>
+                    <div class="w-16 h-16 rounded-full bg-primary/10 p-3 flex items-center justify-center mb-6">
+
+                        <img src="{{ asset('images/exercise.png') }}" alt="Sport VIP">
+
+
                     </div>
-                    <h3 class="text-xl font-bold mb-4">Asistencia en Viaje</h3>
-                    <p class="text-gray-600 mb-4">Ayuda en caso de pérdida de equipaje, retrasos de vuelo o cancelaciones de viaje.</p>
+                    <h3 class="text-xl font-bold mb-4">Sport VIP</h3>
+                    <p class="text-gray-600 mb-4">Cobertura mundial hasta el tope de asistencia médica por accidente sin exceder US$ 100.000. Prácticade deportes categoría 2,3 y 4. Límite de edad de 15 a 65 años.</p>
+
                     {{-- <a href="#" class="text-primary font-medium flex items-center">
                         Ver detalles
                         <i class="fas fa-arrow-right ml-2 text-sm"></i>
@@ -540,11 +548,15 @@
                 </div>
 
                 <div class="bg-white rounded-2xl p-8 shadow-lg service-card animate-on-scroll">
-                    <div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-6">
-                        <i class="fas fa-phone-alt text-primary text-2xl"></i>
+                    <div class="w-16 h-16 flex rounded-full bg-primary/10 p-3 items-center justify-center mb-6">
+
+                        <img src="{{ asset('images/ask.png') }}" alt="Multi Causa">
+
+
                     </div>
-                    <h3 class="text-xl font-bold mb-4">Asistencia Legal</h3>
-                    <p class="text-gray-600 mb-4">Asesoramiento y apoyo legal en caso de incidentes durante tu estadía en el extranjero.</p>
+                    <h3 class="text-xl font-bold mb-4">Multi Causa</h3>
+                    <p class="text-gray-600 mb-4">Cobertura mundial desde US$ 1.000 hasta US$ 10.000 (Seguro de cancelación multi causa). Límite de edad 74 años.</p>
+
                     {{-- <a href="#" class="text-primary font-medium flex items-center">
                         Ver detalles
                         <i class="fas fa-arrow-right ml-2 text-sm"></i>
@@ -552,11 +564,13 @@
                 </div>
 
                 <div class="bg-white rounded-2xl p-8 shadow-lg service-card animate-on-scroll">
-                    <div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-6">
-                        <i class="fas fa-home text-primary text-2xl"></i>
+                    <div class="w-16 h-16 rounded-full bg-primary/10 p-3 flex items-center justify-center mb-6">
+                        <img src="{{ asset('images/travel.png') }}" alt="Objetos Personales">
+
                     </div>
-                    <h3 class="text-xl font-bold mb-4">Asistencia en Hogar</h3>
-                    <p class="text-gray-600 mb-4">Soporte para emergencias en tu hogar mientras estás de viaje.</p>
+                    <h3 class="text-xl font-bold mb-4">Objetos Personales</h3>
+                    <p class="text-gray-600 mb-4">Cobertura mundial US$ 2.000. No acumulable con otras ofertas.</p>
+
                     {{-- <a href="#" class="text-primary font-medium flex items-center">
                         Ver detalles
                         <i class="fas fa-arrow-right ml-2 text-sm"></i>
@@ -564,11 +578,14 @@
                 </div>
 
                 <div class="bg-white rounded-2xl p-8 shadow-lg service-card animate-on-scroll">
-                    <div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-6">
-                        <i class="fas fa-car text-primary text-2xl"></i>
+                    <div class="w-16 h-16 rounded-full bg-primary/10 p-3 flex items-center justify-center mb-6">
+
+                        <img src="{{ asset('images/laptop.png') }}" alt="Tech Protection">
+
                     </div>
-                    <h3 class="text-xl font-bold mb-4">Asistencia Vehicular</h3>
-                    <p class="text-gray-600 mb-4">Ayuda en caso de accidentes o problemas mecánicos con tu vehículo durante el viaje.</p>
+                    <h3 class="text-xl font-bold mb-4">Tech Protection</h3>
+                    <p class="text-gray-600 mb-4">Cobertura mundial US$ 2.000. No acumulable con otras ofertas.</p>
+
                     {{-- <a href="#" class="text-primary font-medium flex items-center">
                         Ver detalles
                         <i class="fas fa-arrow-right ml-2 text-sm"></i>
@@ -576,16 +593,92 @@
                 </div>
 
                 <div class="bg-white rounded-2xl p-8 shadow-lg service-card animate-on-scroll">
-                    <div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-6">
-                        <i class="fas fa-globe-americas text-primary text-2xl"></i>
+                    <div class="w-16 h-16 rounded-full bg-primary/10 p-3 flex items-center justify-center mb-6">
+                        <img src="{{ asset('images/ferris-wheel.png') }}" alt="Parque Temático">
+
+
                     </div>
-                    <h3 class="text-xl font-bold mb-4">Cobertura Internacional</h3>
-                    <p class="text-gray-600 mb-4">Protección en todos tus viajes internacionales con servicios adaptados a cada país.</p>
+                    <h3 class="text-xl font-bold mb-4">Parque Temático</h3>
+                    <p class="text-gray-600 mb-4">Cobertura mundial 70% del ticket hasta los 74 años.</p>
+
                     {{-- <a href="#" class="text-primary font-medium flex items-center">
                         Ver detalles
                         <i class="fas fa-arrow-right ml-2 text-sm"></i>
                     </a> --}}
                 </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-lg service-card animate-on-scroll">
+                    <div class="w-16 h-16 rounded-full bg-primary/10 p-3 flex items-center justify-center mb-6">
+                        <img src="{{ asset('images/alert.png') }}" alt="Gestión de Crisis">
+
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Gestión de Crisis</h3>
+                    <p class="text-gray-600 mb-4">Cobertura mundial hasta el tope máximo establecido. Límite de edad 74 años.</p>
+
+                    {{-- <a href="#" class="text-primary font-medium flex items-center">
+                        Ver detalles
+                        <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                    </a> --}}
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-lg service-card animate-on-scroll">
+                    <div class="w-16 h-16 rounded-full bg-primary/10 p-3 flex items-center justify-center mb-6">
+                        <img src="{{ asset('images/people.png') }}" alt="Enfermedad Preexistente">
+
+
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Enfermedad Preexistente</h3>
+                    <p class="text-gray-600 mb-4">Cobertura mundial 30% de la cobertura médica, sin exceder US$ 30.000. Límite de edad 74 años.</p>
+
+                    {{-- <a href="#" class="text-primary font-medium flex items-center">
+                        Ver detalles
+                        <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                    </a> --}}
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-lg service-card animate-on-scroll">
+                    <div class="w-16 h-16 rounded-full bg-primary/10 p-3 flex items-center justify-center mb-6">
+                        <svg fill="#000000" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path d="M19.8,18.4C19.8,18.4,19.8,18.4,19.8,18.4l-4-4c0,0,0,0,0,0l-2.1-2.1l0,0l-8-8c0,0,0,0,0,0L2.7,1.3c-0.4-0.4-1-0.4-1.4,0c-0.4,0.4-0.4,1,0,1.4L5,6.4C3.9,7.7,3.2,9.3,3.1,11H2c-0.6,0-1,0.4-1,1s0.4,1,1,1h1.1c0.2,1.7,0.9,3.3,1.9,4.6l-0.8,0.8c-0.4,0.4-0.4,1,0,1.4c0.4,0.4,1,0.4,1.4,0L6.4,19c1.3,1.1,2.9,1.7,4.6,1.9V22c0,0.6,0.4,1,1,1s1-0.4,1-1v-1.1c1.7-0.2,3.3-0.9,4.6-1.9l3.7,3.7c0.2,0.2,0.4,0.3,0.7,0.3c0.3,0,0.5-0.1,0.7-0.3c0.4-0.4,0.4-1,0-1.4L19.8,18.4z M9,16c-0.6,0-1-0.4-1-1s0.4-1,1-1s1,0.4,1,1S9.6,16,9,16z M9.5,12C8.7,12,8,11.3,8,10.5c0-0.3,0.1-0.6,0.3-0.8l2.1,2.1C10.1,11.9,9.8,12,9.5,12z M20.9,13H22c0.6,0,1-0.4,1-1s-0.4-1-1-1h-1.1c-0.2-1.7-0.9-3.3-1.9-4.6l0.8-0.8c0.4-0.4,0.4-1,0-1.4c-0.4-0.4-1-0.4-1.4,0L17.6,5c-1.3-1.1-2.9-1.7-4.6-1.9V2c0-0.6-0.4-1-1-1s-1,0.4-1,1v1.1c-1,0.1-2,0.4-2.9,0.8l12,12C20.5,15,20.8,14,20.9,13z M15,10c-0.6,0-1-0.4-1-1s0.4-1,1-1s1,0.4,1,1S15.6,10,15,10z"></path>
+                            </g>
+                        </svg>
+
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Cancelación y Cuarentena</h3>
+                    <p class="text-gray-600 mb-4">Cobertura mundial, hasta el tope máximo, establecido por beneficio (gastos de hotel, alimentación, traslado, penalidad o cancelación de viaje, telemedicina, telepsicología) Límite de edad 70 años.</p>
+
+                    {{-- <a href="#" class="text-primary font-medium flex items-center">
+                        Ver detalles
+                        <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                    </a> --}}
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-lg service-card animate-on-scroll">
+                    <div class="w-16 h-16 rounded-full bg-primary/10 p-3 flex items-center justify-center mb-6">
+                        <svg height="200px" width="200px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48.839 48.839" xml:space="preserve" fill="#000000">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <g>
+                                    <path style="fill:#030104;" d="M39.041,36.843c2.054,3.234,3.022,4.951,3.022,6.742c0,3.537-2.627,5.252-6.166,5.252 c-1.56,0-2.567-0.002-5.112-1.326c0,0-1.649-1.509-5.508-1.354c-3.895-0.154-5.545,1.373-5.545,1.373 c-2.545,1.323-3.516,1.309-5.074,1.309c-3.539,0-6.168-1.713-6.168-5.252c0-1.791,0.971-3.506,3.024-6.742 c0,0,3.881-6.445,7.244-9.477c2.43-2.188,5.973-2.18,5.973-2.18h1.093v-0.001c0,0,3.698-0.009,5.976,2.181 C35.059,30.51,39.041,36.844,39.041,36.843z M16.631,20.878c3.7,0,6.699-4.674,6.699-10.439S20.331,0,16.631,0 S9.932,4.674,9.932,10.439S12.931,20.878,16.631,20.878z M10.211,30.988c2.727-1.259,3.349-5.723,1.388-9.971 s-5.761-6.672-8.488-5.414s-3.348,5.723-1.388,9.971C3.684,29.822,7.484,32.245,10.211,30.988z M32.206,20.878 c3.7,0,6.7-4.674,6.7-10.439S35.906,0,32.206,0s-6.699,4.674-6.699,10.439C25.507,16.204,28.506,20.878,32.206,20.878z M45.727,15.602c-2.728-1.259-6.527,1.165-8.488,5.414s-1.339,8.713,1.389,9.972c2.728,1.258,6.527-1.166,8.488-5.414 S48.455,16.861,45.727,15.602z"></path>
+                                </g>
+                            </g>
+                        </svg>
+
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Asistencia para Mascotas</h3>
+                    <p class="text-gray-600 mb-4">Cobertura mundial de US$ 5.000 a US$ 10.000. Límite de edad de la mascota desde 4 meses hasta los 8 años. UPGRADE VIP (Beneficios que puede adicionar a su plan).</p>
+
+                    {{-- <a href="#" class="text-primary font-medium flex items-center">
+                        Ver detalles
+                        <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                    </a> --}}
+                </div>
+
+
             </div>
         </div>
     </section>
@@ -839,6 +932,228 @@
                                 <i class="fas fa-quote-right quote-icon"></i>
                             </div>
                         </li>
+
+                        <!-- Testimonio 5 -->
+                        <li class="glide__slide">
+                            <div class="testimonial-card p-8 h-full">
+                                <div class="flex items-start mb-6">
+                                    <img src="https://images.unsplash.com/photo-1552058544-f2b08422138a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=798&q=80" alt="Juan Pérez" class="testimonial-avatar rounded-full mr-5">
+                                    <div>
+                                        <h4 class="font-bold text-xl">Juan Pérez</h4>
+                                        <div class="flex items-center mt-1">
+                                            <div class="flex text-yellow-400 mr-4">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="flex items-center text-sm text-gray-500">
+                                                <div class="map-pin mr-2"></div>
+                                                <span>Nueva York, USA</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="mb-8 text-lg italic relative">"Mi vuelo fue cancelado por una tormenta y ViajeSeguro me cubrió los gastos de hotel y comida sin problemas. La app móvil es muy fácil de usar para gestionar todo directamente desde el teléfono."</p>
+                                <div class="flex items-center">
+                                    <div class="bg-light p-3 rounded-lg mr-4">
+                                        <i class="fas fa-hotel text-tertiary text-xl"></i>
+                                    </div>
+                                    <div class="text-sm">
+                                        <div class="font-semibold">Alojamiento alternativo</div>
+                                        <div class="text-gray-500">Resuelto en 6 horas</div>
+                                    </div>
+                                </div>
+                                <i class="fas fa-quote-right quote-icon"></i>
+                            </div>
+                        </li>
+
+
+                        <!-- Testimonio 5 -->
+                        <li class="glide__slide">
+                            <div class="testimonial-card p-8 h-full">
+                                <div class="flex items-start mb-6">
+                                    <img src="https://images.unsplash.com/photo-1552058544-f2b08422138a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=798&q=80" alt="Juan Pérez" class="testimonial-avatar rounded-full mr-5">
+                                    <div>
+                                        <h4 class="font-bold text-xl">Juan Pérez</h4>
+                                        <div class="flex items-center mt-1">
+                                            <div class="flex text-yellow-400 mr-4">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="flex items-center text-sm text-gray-500">
+                                                <div class="map-pin mr-2"></div>
+                                                <span>Nueva York, USA</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="mb-8 text-lg italic relative">"Mi vuelo fue cancelado por una tormenta y ViajeSeguro me cubrió los gastos de hotel y comida sin problemas. La app móvil es muy fácil de usar para gestionar todo directamente desde el teléfono."</p>
+                                <div class="flex items-center">
+                                    <div class="bg-light p-3 rounded-lg mr-4">
+                                        <i class="fas fa-hotel text-tertiary text-xl"></i>
+                                    </div>
+                                    <div class="text-sm">
+                                        <div class="font-semibold">Alojamiento alternativo</div>
+                                        <div class="text-gray-500">Resuelto en 6 horas</div>
+                                    </div>
+                                </div>
+                                <i class="fas fa-quote-right quote-icon"></i>
+                            </div>
+                        </li>
+
+
+                        <!-- Testimonio 7 -->
+                        <li class="glide__slide">
+                            <div class="testimonial-card p-8 h-full">
+                                <div class="flex items-start mb-6">
+                                    <img src="https://images.unsplash.com/photo-1552058544-f2b08422138a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=798&q=80" alt="Juan Pérez" class="testimonial-avatar rounded-full mr-5">
+                                    <div>
+                                        <h4 class="font-bold text-xl">Juan Pérez</h4>
+                                        <div class="flex items-center mt-1">
+                                            <div class="flex text-yellow-400 mr-4">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="flex items-center text-sm text-gray-500">
+                                                <div class="map-pin mr-2"></div>
+                                                <span>Nueva York, USA</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="mb-8 text-lg italic relative">"Mi vuelo fue cancelado por una tormenta y ViajeSeguro me cubrió los gastos de hotel y comida sin problemas. La app móvil es muy fácil de usar para gestionar todo directamente desde el teléfono."</p>
+                                <div class="flex items-center">
+                                    <div class="bg-light p-3 rounded-lg mr-4">
+                                        <i class="fas fa-hotel text-tertiary text-xl"></i>
+                                    </div>
+                                    <div class="text-sm">
+                                        <div class="font-semibold">Alojamiento alternativo</div>
+                                        <div class="text-gray-500">Resuelto en 6 horas</div>
+                                    </div>
+                                </div>
+                                <i class="fas fa-quote-right quote-icon"></i>
+                            </div>
+                        </li>
+
+
+                        <!-- Testimonio 8 -->
+                        <li class="glide__slide">
+                            <div class="testimonial-card p-8 h-full">
+                                <div class="flex items-start mb-6">
+                                    <img src="https://images.unsplash.com/photo-1552058544-f2b08422138a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=798&q=80" alt="Juan Pérez" class="testimonial-avatar rounded-full mr-5">
+                                    <div>
+                                        <h4 class="font-bold text-xl">Juan Pérez</h4>
+                                        <div class="flex items-center mt-1">
+                                            <div class="flex text-yellow-400 mr-4">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="flex items-center text-sm text-gray-500">
+                                                <div class="map-pin mr-2"></div>
+                                                <span>Nueva York, USA</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="mb-8 text-lg italic relative">"Mi vuelo fue cancelado por una tormenta y ViajeSeguro me cubrió los gastos de hotel y comida sin problemas. La app móvil es muy fácil de usar para gestionar todo directamente desde el teléfono."</p>
+                                <div class="flex items-center">
+                                    <div class="bg-light p-3 rounded-lg mr-4">
+                                        <i class="fas fa-hotel text-tertiary text-xl"></i>
+                                    </div>
+                                    <div class="text-sm">
+                                        <div class="font-semibold">Alojamiento alternativo</div>
+                                        <div class="text-gray-500">Resuelto en 6 horas</div>
+                                    </div>
+                                </div>
+                                <i class="fas fa-quote-right quote-icon"></i>
+                            </div>
+                        </li>
+
+
+                        <!-- Testimonio 9 -->
+                        <li class="glide__slide">
+                            <div class="testimonial-card p-8 h-full">
+                                <div class="flex items-start mb-6">
+                                    <img src="https://images.unsplash.com/photo-1552058544-f2b08422138a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=798&q=80" alt="Juan Pérez" class="testimonial-avatar rounded-full mr-5">
+                                    <div>
+                                        <h4 class="font-bold text-xl">Juan Pérez</h4>
+                                        <div class="flex items-center mt-1">
+                                            <div class="flex text-yellow-400 mr-4">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="flex items-center text-sm text-gray-500">
+                                                <div class="map-pin mr-2"></div>
+                                                <span>Nueva York, USA</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="mb-8 text-lg italic relative">"Mi vuelo fue cancelado por una tormenta y ViajeSeguro me cubrió los gastos de hotel y comida sin problemas. La app móvil es muy fácil de usar para gestionar todo directamente desde el teléfono."</p>
+                                <div class="flex items-center">
+                                    <div class="bg-light p-3 rounded-lg mr-4">
+                                        <i class="fas fa-hotel text-tertiary text-xl"></i>
+                                    </div>
+                                    <div class="text-sm">
+                                        <div class="font-semibold">Alojamiento alternativo</div>
+                                        <div class="text-gray-500">Resuelto en 6 horas</div>
+                                    </div>
+                                </div>
+                                <i class="fas fa-quote-right quote-icon"></i>
+                            </div>
+                        </li>
+
+
+                        <!-- Testimonio 10 -->
+                        <li class="glide__slide">
+                            <div class="testimonial-card p-8 h-full">
+                                <div class="flex items-start mb-6">
+                                    <img src="https://images.unsplash.com/photo-1552058544-f2b08422138a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=798&q=80" alt="Juan Pérez" class="testimonial-avatar rounded-full mr-5">
+                                    <div>
+                                        <h4 class="font-bold text-xl">Juan Pérez</h4>
+                                        <div class="flex items-center mt-1">
+                                            <div class="flex text-yellow-400 mr-4">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="flex items-center text-sm text-gray-500">
+                                                <div class="map-pin mr-2"></div>
+                                                <span>Nueva York, USA</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="mb-8 text-lg italic relative">"Mi vuelo fue cancelado por una tormenta y ViajeSeguro me cubrió los gastos de hotel y comida sin problemas. La app móvil es muy fácil de usar para gestionar todo directamente desde el teléfono."</p>
+                                <div class="flex items-center">
+                                    <div class="bg-light p-3 rounded-lg mr-4">
+                                        <i class="fas fa-hotel text-tertiary text-xl"></i>
+                                    </div>
+                                    <div class="text-sm">
+                                        <div class="font-semibold">Alojamiento alternativo</div>
+                                        <div class="text-gray-500">Resuelto en 6 horas</div>
+                                    </div>
+                                </div>
+                                <i class="fas fa-quote-right quote-icon"></i>
+                            </div>
+                        </li>
+
                     </ul>
                 </div>
 
@@ -910,7 +1225,8 @@
 
 
     <!-- Sección Cotizar -->
-    <section id="cotizar" class="py-20 bg-gradient-to-r from-primary to-secondary text-white">
+    <section id="cotizar" class="py-20 bg-gradient-to-r from-primary to-tertiary text-white">
+
         <div class="container mx-auto px-6">
             <div class="max-w-4xl mx-auto">
                 <div class="text-center mb-12">
@@ -925,9 +1241,9 @@
                                 <label class="block mb-2 font-medium">Tipo de seguro</label>
                                 <select class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none">
                                     <option>Selecciona un plan</option>
-                                    <option>Seguro Básico</option>
-                                    <option>Seguro Premium</option>
-                                    <option>Seguro Internacional</option>
+                                    <option>Local</option>
+                                    <option>Mundial</option>
+                                    <option>Europa Low Cost</option>
                                 </select>
                             </div>
 
@@ -1082,11 +1398,11 @@
                 <div>
                     <h4 class="text-lg font-bold mb-6">Nuestros Servicios</h4>
                     <ul class="space-y-3">
-                        <li><a href="#" class="hover:text-tertiary transition">Seguro Básico</a></li>
-                        <li><a href="#" class="hover:text-tertiary transition">Seguro Premium</a></li>
-                        <li><a href="#" class="hover:text-tertiary transition">Seguro Internacional</a></li>
-                        <li><a href="#" class="hover:text-tertiary transition">Seguro para Estudiantes</a></li>
-                        <li><a href="#" class="hover:text-tertiary transition">Seguro de Negocios</a></li>
+                        <li><a href="#" class="hover:text-tertiary transition">Plan Local</a></li>
+                        <li><a href="#" class="hover:text-tertiary transition">Plan Mundial</a></li>
+                        <li><a href="#" class="hover:text-tertiary transition">Europa Low Cost</a></li>
+                        <li><a href="#" class="hover:text-tertiary transition">UPGRADES VIP</a></li>
+                        {{-- <li><a href="#" class="hover:text-tertiary transition">Seguro de Negocios</a></li> --}}
                     </ul>
                 </div>
 
