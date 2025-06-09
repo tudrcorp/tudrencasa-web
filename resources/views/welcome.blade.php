@@ -283,6 +283,13 @@
 
 </head>
 <body class="bg-light text-primary">
+
+    <!-- Botón de WhatsApp flotante -->
+    <a href="https://wa.me/584242271498?text=Hola ,%20me%20gustaría%20cotizar%20un%20seguro%20de%20viaje" target="_blank" class="fixed bottom-6 right-6 z-50 flex items-center justify-center w-16 h-16 bg-green-500 rounded-full shadow-lg transition-transform hover:scale-110 focus:outline-none">
+        <img src="{{ asset('images/whatsapp.png') }}" alt="WhatsApp" class="w-8 h-8 text-white">
+        <span class="sr-only">Chatea con nosotros por WhatsApp</span>
+    </a>
+
     <!-- Banner Principal -->
     {{-- <section class="hero-banner min-h-screen flex items-center justify-center text-white">
         <div class="container mx-auto px-6 text-center">
@@ -320,11 +327,6 @@
             </div>
         </div>
 
-        <!-- Control de video -->
-        <div class="video-control" id="videoControl">
-            <i class="fas fa-volume-mute" id="volumeIcon"></i>
-        </div>
-
         <!-- Flecha para indicar scroll -->
         <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
             <a href="#nosotros" class="text-white text-3xl">
@@ -333,7 +335,7 @@
         </div>
 
         <!-- Estadísticas flotantes -->
-        <div class="absolute bottom-10 right-10 hidden lg:flex gap-6">
+        <div class="absolute bottom-10 right-20 hidden lg:flex gap-6">
             <div class="stats-card p-4 rounded-xl shadow-lg floating">
                 <p class="text-3xl font-bold text-primary text-center">98%</p>
                 <p class="text-dark">Clientes satisfechos</p>
