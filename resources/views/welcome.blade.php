@@ -945,7 +945,8 @@
                             <path d="M12 5v14M5 12h14" />
                         </svg>
                         <svg id="icono-video1-off" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M15.536 5.464a9 9 0 010 13.072m-.75-13.072a10.5 10.5 0 00-14.75 0" />
+                            <path d="M12 5v14M5 12h14" />
+
                         </svg>
                     </button>
                 </div>
@@ -959,7 +960,8 @@
                             <path d="M12 5v14M5 12h14" />
                         </svg>
                         <svg id="icono-video2-off" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M15.536 5.464a9 9 0 010 13.072m-.75-13.072a10.5 10.5 0 00-14.75 0" />
+                            <path d="M12 5v14M5 12h14" />
+
                         </svg>
                     </button>
                 </div>
@@ -973,7 +975,8 @@
                             <path d="M12 5v14M5 12h14" />
                         </svg>
                         <svg id="icono-video3-off" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 5.464a9 9 0 010 13.072m-.75-13.072a10.5 10.5 0 00-14.75 0" />
+                            <path d="M12 5v14M5 12h14" />
+
                         </svg>
                     </button>
 
@@ -1212,7 +1215,6 @@
                 iconOff.classList.remove('hidden');
             }
         }
-
     </script>
 
 
