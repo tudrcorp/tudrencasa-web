@@ -51,9 +51,6 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    {{-- @vite(['resources/css/app.css', 'resources/js/app.js']) --}}
-    {{-- @fluxAppearance --}}
-
 
     <script>
         tailwind.config = {
@@ -1028,7 +1025,7 @@
 
     <!-- VIDEOS TESTIMONIALES -->
     <section id="servicios" class="py-20 bg-light">
-        <div class="container mx-auto px-60 w-full">
+        <div class="container mx-auto w-full">
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-4xl font-bold mb-4">Experiencias en salas VIP</h2>
                 <p class="text-md max-w-3xl mx-auto mb-6">Transforma el estrés de un vuelo atrasado en una SALA VIP. Evita las multitudes y relájate en un ambiente agradable mientras esperas para volar hacia tu proximo destino. Haz de tu experiencia en el aeropuerto al extraordinario.</p>
