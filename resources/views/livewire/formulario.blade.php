@@ -1,6 +1,8 @@
 <div>
     <div class="bg-white text-primary rounded-xl shadow-xl p-8 {{ $hiddenFormulario }}">
-        <div class="space-y-6">
+        <form wire:submit="guardarSolicitud" class="space-y-6">
+
+
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                     <label class="block mb-2 font-medium">Tipo de seguro</label>
@@ -100,13 +102,14 @@
                 </label>
             </div> --}}
     
-            <button wire:click.prevent="submit" class="w-full bg-tertiary hover:bg-secondary text-white font-bold py-4 px-6 rounded-lg text-lg transition duration-300">
-                <svg xmlns="http://www.w3.org/2000/svg" wire:loading wire:target="submit" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="animate-spin h-5 w-5 mr-3">
+            <button type="guardarSolicitud" class="w-full bg-tertiary hover:bg-secondary text-white font-bold py-4 px-6 rounded-lg text-lg transition duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" wire:loading wire:target="guardarSolicitud" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="animate-spin h-5 w-5 mr-3">
+
                     <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99" />
                 </svg>
                 Solicitar cotización
             </button>
-        </div>
+        </form>
     </div>
     
     <div class="e-card playing {{ $hiddenNotificacion }}">

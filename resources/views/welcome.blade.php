@@ -51,6 +51,10 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
+    {{-- @vite(['resources/css/app.css', 'resources/js/app.js']) --}}
+    {{-- @fluxAppearance --}}
+
+
     <script>
         tailwind.config = {
             theme: {
@@ -366,17 +370,17 @@
         }
         }
 
-
-
-        
-
-
-
     </style>
+
+
+
     <!-- Glide.js para el carrusel -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.core.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.theme.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/glide.min.js"></script>
+
+
+
 
 </head>
 <body class="bg-light text-primary">

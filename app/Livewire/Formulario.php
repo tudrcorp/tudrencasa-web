@@ -12,48 +12,25 @@ use App\Models\Formulario as FormularioSolicitud;
 
 class Formulario extends Component
 {
-    #[Validate('required')]
     public $plan;
-
-    #[Validate('required')]
-
-    #[Validate('required')]
     public $destino;
-
-    #[Validate('required')]
     public $fecha_salida;
-
-    #[Validate('required')]
     public $fecha_retorno;
-
-    #[Validate('required')]
     public $adultos;
-
-    #[Validate('required')]
     public $menores;
-    
-    #[Validate('required')]
     public $mayores;
-
-    #[Validate('required')]
     public $nombre_completo;
-
-    #[Validate('required')]
     public $email;
-
-    #[Validate('required')]
     public $telefono;
-    
 
     public $hiddenFormulario = 'block';
     public $hiddenNotificacion = 'hidden';
 
-    public function submit()
+    public function guardarSolicitud()
     {
 
         try {
 
-            $this->validate();
 
             //Almaceno la informacion en la base de datos
             $formulario = new FormularioSolicitud();
@@ -133,6 +110,7 @@ class Formulario extends Component
             $this->hiddenNotificacion = 'block';
 
         } catch (\Throwable $th) {
+            dd($th);
             report($th);
         }
     
