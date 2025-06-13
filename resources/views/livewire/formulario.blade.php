@@ -1,8 +1,7 @@
 <div>
     <div class="bg-white text-primary rounded-xl shadow-xl p-8 {{ $hiddenFormulario }}">
         <form wire:submit="guardarSolicitud" class="space-y-6">
-
-
+            @csrf
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                     <label class="block mb-2 font-medium">Tipo de seguro</label>
