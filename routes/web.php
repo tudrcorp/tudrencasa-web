@@ -7,6 +7,10 @@ Route::get('/', function () {
     return view('welcome');
 })->name('home');
 
+//ruta de livewire  
+
+Route::get('/formulario', App\Livewire\Formulario::class)->name('formulario');
+
 Route::get('/sitemap.xml', function () {
     return response()
         ->view('sitemap')
