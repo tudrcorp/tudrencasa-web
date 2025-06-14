@@ -378,8 +378,9 @@
 
 
 
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
     @livewireStyles
+    @vite(['resources/js/app.js'])
+
 
 </head>
 <body class="bg-light text-primary">
@@ -1403,7 +1404,8 @@
 
     </script>
 
-    @livewireScripts
+    @livewireScriptConfig
+
 
 </body>
 </html>
