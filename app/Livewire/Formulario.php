@@ -30,7 +30,6 @@ class Formulario extends Component
     {
 
         try {
-            dd('this->destino');
 
             //Almaceno la informacion en la base de datos
             $formulario = new FormularioSolicitud();
