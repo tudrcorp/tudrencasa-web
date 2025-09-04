@@ -35,14 +35,14 @@
 
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ url()->current() }}">
-    <meta property="og:image" content="{{ asset('images/logo_3.png') }}">
+    <meta property="og:image" content="{{ asset('images/logoNewTDEV.png') }}">
     <meta property="og:site_name" content="Asistencia en Viaje">
 
     <!-- Twitter Card -->
-    <meta name="twitter:card" content="{{ asset('images/logo_3.png') }}">
+    <meta name="twitter:card" content="{{ asset('images/logoNewTDEV.png') }}">
     <meta name="twitter:title" content="@yield('og_title', 'Asistencia en Viaje | Seguro Médico Global')">
     <meta name="twitter:description" content="@yield('og_description', 'Cobertura integral para viajeros del mundo.')">
-    <meta name="twitter:image" content="{{ asset('images/logo_3.png') }}">
+    <meta name="twitter:image" content="{{ asset('images/logoNewTDEV.png') }}">
 
     <!-- Canonical URL -->
     <link rel="canonical" href="{{ url()->current() }}" />
@@ -407,7 +407,7 @@
 
         <div class="container mx-auto px-4 z-10">
             <div class="max-w-2xl animate-on-scroll">
-                <img src="{{ asset('images/logo_3.png') }}" class="w-1/2 mb-10" alt="Viaja protegido con nuestro seguro médico global">
+                <img src="{{ asset('images/logoNewTDEV.png') }}" class="w-full mb-10" alt="Viaja protegido con nuestro seguro médico global">
                 <h1 class="text-4xl md:text-5xl font-bold text-white mb-6 font-heading tracking-tight">Tu tranquilidad en cada <span class="text-gold">viaje</span></h1>
                 <p class="text-xl text-white mb-10 max-w-lg">Protección y asistencia premium 24/7 para que disfrutes tu aventura sin preocupaciones en cualquier parte del mundo.</p>
                 <div class="flex flex-wrap gap-4 items-center">
@@ -469,7 +469,7 @@
                         <i class="fas fa-shield-alt text-primary text-2xl"></i>
                     </div>
                     <span class="text-white text-xl font-bold">Tu Dr. en Viajes </span> --}}
-                    <img src="{{ asset('images/logo_3.png') }}" class="w-1/4 h-auto" alt="Viaja protegido con nuestro seguro médico global">
+                    <img src="{{ asset('images/logoNewTDEV.png') }}" class="w-1/4 h-auto p-3" alt="Viaja protegido con nuestro seguro médico global">
                 </div>
 
                 <div class="hidden md:flex space-x-8">
@@ -1242,7 +1242,7 @@
                             <i class="fas fa-shield-alt text-primary text-xl"></i>
                         </div>
                         <span class="text-white text-xl font-bold">Tu Dr. en Viajes </span> --}}
-                        <img src="{{ asset('images/logo_3.png') }}" class="w-28" alt="Viaja protegido con nuestro seguro médico global">
+                        <img src="{{ asset('images/logoNewTDEV.png') }}" class="w-28" alt="Viaja protegido con nuestro seguro médico global">
                     </div>
                     <p class="mb-6">Hay quienes buscan la felicidad... Y hay quienes la crean viajando protegidos con TuDrEnViajes.!</p>
                     <div class="flex space-x-4">
