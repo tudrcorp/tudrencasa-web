@@ -411,7 +411,8 @@
                 <h1 class="text-4xl md:text-5xl font-bold text-white mb-6 font-heading tracking-tight">Tu tranquilidad en cada <span class="text-gold">viaje</span></h1>
                 <p class="text-xl text-white mb-10 max-w-lg">Protección y asistencia premium 24/7 para que disfrutes tu aventura sin preocupaciones en cualquier parte del mundo.</p>
                 <div class="flex flex-wrap gap-4 items-center">
-                    <a href="https://tudrenviajes.xyz/app/pages/login.php" class="px-8 py-4 bg-alert text-white rounded-full font-bold hover:bg-secondary transition transform hover:-translate-y-1 glow-on-hover">
+                    <a href="https://wa.me/584242220056?text=Hola ,%20me%20gustaría%20cotizar%20un%20seguro%20de%20viaje" class="px-8 py-4 bg-alert text-white rounded-full font-bold hover:bg-secondary transition transform hover:-translate-y-1 glow-on-hover">
+
                         Compra Ahora!
                     </a>
                     {{-- <button class="px-8 py-2 bg-white/20 text-white rounded-full font-bold backdrop-blur-sm hover:bg-white/30 transition" id="playBtn">
@@ -434,7 +435,7 @@
         </div>
 
         <!-- Estadísticas flotantes -->
-        <div class="absolute bottom-10 right-20 hidden lg:flex gap-6 h-24">
+        {{-- <div class="absolute bottom-10 right-20 hidden lg:flex gap-6 h-24">
             <div class="stats-card p-4 rounded-xl shadow-lg floating w-[200px]">
                 <div class="flex justify-center items-center gap-1">
                     <img src="{{ asset('images/carita.png') }}" class="w-10 h-auto items-center" alt="">
@@ -455,7 +456,7 @@
                 <p class="text-dark text-center">Contactanos!</p>
             </div>
 
-        </div>
+        </div> --}}
     </section>
 
 
