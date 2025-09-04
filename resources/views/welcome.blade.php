@@ -57,13 +57,13 @@
             theme: {
                 extend: {
                     colors: {
-                        primary: "#052F60"
+                        primary: "#107275"
                         , alert: "#f97316"
-                        , secondary: "#305B93"
-                        , tertiary: "#5488AE"
-                        , accent: "#4A8982"
+                        , secondary: "#1F9AA1"
+                        , tertiary: "#28BCC2"
+                        , accent: "#EFEFEF"
                         , success: "#529471"
-                        , light: "#E8EBEA"
+                        , light: "#EFEFEF"
                     }
                 }
             }
