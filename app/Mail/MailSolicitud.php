@@ -2,9 +2,10 @@
 
 namespace App\Mail;
 
+use App\Models\Formulario;
 use Illuminate\Bus\Queueable;
-use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
+use Illuminate\Mail\Mailables\Address;
 use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
@@ -13,30 +14,19 @@ class MailSolicitud extends Mailable
 {
     use Queueable, SerializesModels;
 
-    public $formulario;
+    public function __construct(public Formulario $formulario) {}
 
-    /**
-     * Create a new message instance.
-     */
-    public function __construct($formulario)
-    {
-        $this->formulario = $formulario;
-        //
-    }
-
-    /**
-     * Get the message envelope.
-     */
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: '¡Bienvenido a TuDrEnCasa! 🎉',
+            from: new Address(
+                config('mail.from.address'),
+                config('mail.from.name')
+            ),
+            subject: 'Nueva cotización de seguro de viaje — '.$this->formulario->nombre_completo,
         );
     }
 
-    /**
-     * Get the message content definition.
-     */
     public function content(): Content
     {
         return new Content(
@@ -44,11 +34,6 @@ class MailSolicitud extends Mailable
         );
     }
 
-    /**
-     * Get the attachments for the message.
-     *
-     * @return array<int, \Illuminate\Mail\Mailables\Attachment>
-     */
     public function attachments(): array
     {
         return [];

@@ -18,6 +18,7 @@ class Formulario extends Model
         'mayores',
         'nombre_completo',
         'email',
+        'telefono',
     ];
 
     // protected $casts = [

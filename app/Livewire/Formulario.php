@@ -2,120 +2,92 @@
 
 namespace App\Livewire;
 
-use Livewire\Component;
-use App\Mail\MailSolicitud;
-use App\Jobs\SendEmailFormulario;
-use Livewire\Attributes\Validate;
-use Illuminate\Support\Facades\Log;
-use Illuminate\Support\Facades\Mail;
+use App\Jobs\NotifyCotizacionSolicitud;
 use App\Models\Formulario as FormularioSolicitud;
+use Livewire\Component;
 
 class Formulario extends Component
 {
-    public $plan;
-    public $destino;
-    public $fecha_salida;
-    public $fecha_retorno;
-    public $adultos;
-    public $menores;
-    public $mayores;
-    public $nombre_completo;
-    public $email;
-    public $telefono;
+    public $plan = '';
+    public $destino = '';
+    public $fecha_salida = '';
+    public $fecha_retorno = '';
+    public $adultos = '1';
+    public $menores = '0';
+    public $mayores = '0';
+    public $nombre_completo = '';
+    public $email = '';
+    public $telefono = '';
 
     public $hiddenFormulario = 'block';
     public $hiddenNotificacion = 'hidden';
 
+    protected function rules(): array
+    {
+        return [
+            'plan' => 'required|string|in:Plan Mundial,Europa Low Cost,Plan Local',
+            'destino' => 'required|string|in:América del Norte,América del Sur,Europa,Asia,África,Oceanía',
+            'fecha_salida' => 'required|date',
+            'fecha_retorno' => 'required|date|after_or_equal:fecha_salida',
+            'adultos' => 'required|integer|min:0|max:10',
+            'menores' => 'required|integer|min:0|max:10',
+            'mayores' => 'required|integer|min:0|max:10',
+            'nombre_completo' => 'required|string|min:3|max:255',
+            'email' => 'required|email|max:255',
+            'telefono' => 'required|string|min:7|max:30',
+        ];
+    }
+
+    protected function messages(): array
+    {
+        return [
+            'plan.required' => 'Selecciona un plan.',
+            'plan.in' => 'Selecciona un plan válido.',
+            'destino.required' => 'Selecciona un destino.',
+            'destino.in' => 'Selecciona un destino válido.',
+            'fecha_salida.required' => 'Indica la fecha de salida.',
+            'fecha_retorno.required' => 'Indica la fecha de regreso.',
+            'fecha_retorno.after_or_equal' => 'La fecha de regreso debe ser igual o posterior a la de salida.',
+            'nombre_completo.required' => 'Indica tu nombre completo.',
+            'email.required' => 'Indica tu correo electrónico.',
+            'email.email' => 'El correo electrónico no es válido.',
+            'telefono.required' => 'Indica tu teléfono.',
+        ];
+    }
+
     public function guardarSolicitud()
     {
+        $datos = $this->validate();
 
         try {
+            $formulario = FormularioSolicitud::create([
+                'plan' => $datos['plan'],
+                'destino' => $datos['destino'],
+                'fecha_salida' => $datos['fecha_salida'],
+                'fecha_retorno' => $datos['fecha_retorno'],
+                'adultos' => (int) $datos['adultos'],
+                'menores' => (int) $datos['menores'],
+                'mayores' => (int) $datos['mayores'],
+                'nombre_completo' => $datos['nombre_completo'],
+                'email' => $datos['email'],
+                'telefono' => $datos['telefono'],
+            ]);
 
-            //Almaceno la informacion en la base de datos
-            $formulario = new FormularioSolicitud();
-            $formulario->plan = $this->plan;
-            $formulario->destino = $this->destino;
-            $formulario->fecha_salida = $this->fecha_salida;
-            $formulario->fecha_retorno = $this->fecha_retorno;
-            $formulario->adultos = $this->adultos;
-            $formulario->menores = $this->menores;
-            $formulario->mayores = $this->mayores;
-            $formulario->nombre_completo = $this->nombre_completo;
-            $formulario->email = $this->email;
-            $formulario->telefono = $this->telefono;
-            $formulario->save();
+            // WhatsApp en cola (UltraMsg → 3 destinatarios).
+            NotifyCotizacionSolicitud::dispatch($formulario)->afterCommit();
 
-            /** Envio del email */
-            Mail::to(config('parametros.CORREO'))->send(new MailSolicitud($formulario));
-
-            /** Notificacion por Whatsapp */
-            $body = <<<HTML
-
-                Hola, buenas tardes. 👋
-                Le informamos que el Sr. $formulario->name_completo 
-                ha realizado una solicitud de cotizacion 
-                para seguro de viaje. 😊
-                
-                *Detalle de la solicitud:*
-                
-                *Nombre Completo:* $formulario->nombre_completo
-                *Email:* $formulario->email
-                *Telefono:* $formulario->telefono
-                *Plan:* $formulario->plan
-                *Destino:* $formulario->destino
-                *Fecha Salida:* $formulario->fecha_salida
-                *Fecha Retorno:* $formulario->fecha_retorno
-                *Adultos(18+):* $formulario->adultos
-                *Menores(0-17):* $formulario->menores
-                *Mayores(65+):* $formulario->mayores
- 
-            HTML;
-
-            $params = array(
-                'token' => config('parametros.TOKEN'),
-                'to' => config('parametros.TELEFONO'),
-                'body' => $body
-            );
-            $curl = curl_init();
-            curl_setopt_array($curl, array(
-                CURLOPT_URL =>  config('parametros.CURLOPT_URL'),
-                CURLOPT_RETURNTRANSFER => true,
-                CURLOPT_ENCODING => "",
-                CURLOPT_MAXREDIRS => 10,
-                CURLOPT_TIMEOUT => 30,
-                CURLOPT_SSL_VERIFYHOST => 0,
-                CURLOPT_SSL_VERIFYPEER => 0,
-                CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-                CURLOPT_CUSTOMREQUEST => "POST",
-                CURLOPT_POSTFIELDS => http_build_query($params),
-                CURLOPT_HTTPHEADER => array(
-                    "content-type: application/x-www-form-urlencoded"
-                ),
-            ));
-
-            $response = curl_exec($curl);
-            $err = curl_error($curl);
-            $res = json_decode($response, true);
-
-            if ($err) {
-                Log::error($err);
-            }
-
-            curl_close($curl);
-            
             $this->reset();
-
+            $this->adultos = '1';
+            $this->menores = '0';
+            $this->mayores = '0';
             $this->hiddenFormulario = 'hidden';
             $this->hiddenNotificacion = 'block';
-
         } catch (\Throwable $th) {
-            dd($th);
             report($th);
+            $this->addError('formulario', 'No pudimos enviar tu solicitud. Intenta de nuevo en unos minutos.');
         }
-    
     }
-    
-    
+
     public function render()
     {
         return view('livewire.formulario');
